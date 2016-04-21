@@ -1,0 +1,21 @@
+{
+  "pipeline": {
+    "name": "test-pipeline1"
+  },
+  "transform": {
+    "image": "erikreppel/test-pipeline",
+    "cmd": [ "sh" ],
+    "stdin": [
+      "ls -1 /pfs/numbers",
+      "python square.py /pfs/numbers /pfs/out"
+    ]
+  },
+  "shards": "1",
+  "inputs": [
+    {
+      "repo": {
+        "name": "numbers"
+      }
+    }
+  ]
+}
