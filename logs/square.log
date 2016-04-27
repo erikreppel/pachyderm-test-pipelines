@@ -1,0 +1,394 @@
+0 | total 0
+0 | -rw-rw-rw- 1 root root  0 Apr 26 22:37 numbers0
+0 | -rw-rw-rw- 1 root root  0 Apr 26 22:37 numbers1
+0 | -rw-rw-rw- 1 root root  0 Apr 26 22:37 numbers2
+0 | -rw-rw-rw- 1 root root  0 Apr 26 22:37 numbers3
+0 | -rw-rw-rw- 1 root root  0 Apr 26 22:37 numbers4
+0 | -rw-rw-rw- 1 root root  0 Apr 26 22:37 numbers5
+0 | -rw-rw-rw- 1 root root 30 Apr 26 22:37 numbers6
+0 | -rw-rw-rw- 1 root root 30 Apr 26 22:37 numbers7
+0 | -rw-rw-rw- 1 root root  0 Apr 26 22:37 numbers8
+0 | -rw-rw-rw- 1 root root 30 Apr 26 22:37 numbers9
+0 | 2016-04-26T23:03:28Z NONE  WriteRequest: 3600
+0 | 3721
+0 | 3844
+0 | 3969
+0 | 4096
+0 | 4225
+0 | 4356
+0 | 4489
+0 | 4624
+0 | 4761
+0 | @0
+0 | 2016-04-26T23:03:28Z NONE  WriteRequest: 4900
+0 | 5041
+0 | 5184
+0 | 5329
+0 | 5476
+0 | 5625
+0 | 5776
+0 | 5929
+0 | 6084
+0 | 6241
+0 | @0
+0 | 2016-04-26T23:03:28Z NONE  WriteRequest: 8100
+0 | 8281
+0 | 8464
+0 | 8649
+0 | 8836
+0 | 9025
+0 | 9216
+0 | 9409
+0 | 9604
+0 | 9801
+0 | @0
+0 | starting
+0 | /pfs/data /pfs/out
+0 | walking file system
+0 | [('/pfs/data', [], ['numbers0', 'numbers7', 'numbers1', 'numbers2', 'numbers4', 'numbers3', 'numbers6', 'numbers5', 'numbers8', 'numbers9'])]
+0 | List of files to process: [['/pfs/data/numbers0', 'numbers0'], ['/pfs/data/numbers3', 'numbers3'], ['/pfs/data/numbers8', 'numbers8'], ['/pfs/data/numbers6', 'numbers6'], ['/pfs/data/numbers2', 'numbers2'], ['/pfs/data/numbers1', 'numbers1'], ['/pfs/data/numbers7', 'numbers7'], ['/pfs/data/numbers5', 'numbers5'], ['/pfs/data/numbers4', 'numbers4'], ['/pfs/data/numbers9', 'numbers9']]
+0 | Total 10 files
+0 | Opening /pfs/data/numbers0
+0 | Opening /pfs/data/numbers3
+0 | Opening /pfs/data/numbers8
+0 | Opening /pfs/data/numbers6
+0 | 60
+0 | 
+0 | 61
+0 | 
+0 | 62
+0 | 
+0 | 63
+0 | 
+0 | 64
+0 | 
+0 | 65
+0 | 
+0 | 66
+0 | 
+0 | 67
+0 | 
+0 | 68
+0 | 
+0 | 69
+0 | 
+0 | Opening /pfs/data/numbers2
+0 | Opening /pfs/data/numbers1
+0 | Opening /pfs/data/numbers7
+0 | 70
+0 | 
+0 | 71
+0 | 
+0 | 72
+0 | 
+0 | 73
+0 | 
+0 | 74
+0 | 
+0 | 75
+0 | 
+0 | 76
+0 | 
+0 | 77
+0 | 
+0 | 78
+0 | 
+0 | 79
+0 | 
+0 | Opening /pfs/data/numbers5
+0 | Opening /pfs/data/numbers4
+0 | Opening /pfs/data/numbers9
+0 | 90
+0 | 
+0 | 91
+0 | 
+0 | 92
+0 | 
+0 | 93
+0 | 
+0 | 94
+0 | 
+0 | 95
+0 | 
+0 | 96
+0 | 
+0 | 97
+0 | 
+0 | 98
+0 | 
+0 | 99
+0 | 
+0 | Finished
+1 | total 0
+1 | -rw-rw-rw- 1 root root 20 Apr 26 22:37 numbers0
+1 | -rw-rw-rw- 1 root root 30 Apr 26 22:37 numbers1
+1 | -rw-rw-rw- 1 root root 30 Apr 26 22:37 numbers2
+1 | -rw-rw-rw- 1 root root 30 Apr 26 22:37 numbers3
+1 | -rw-rw-rw- 1 root root  0 Apr 26 22:37 numbers4
+1 | -rw-rw-rw- 1 root root 30 Apr 26 22:37 numbers5
+1 | -rw-rw-rw- 1 root root  0 Apr 26 22:37 numbers6
+1 | -rw-rw-rw- 1 root root  0 Apr 26 22:37 numbers7
+1 | -rw-rw-rw- 1 root root  0 Apr 26 22:37 numbers8
+1 | -rw-rw-rw- 1 root root  0 Apr 26 22:37 numbers9
+1 | 2016-04-26T23:03:32Z NONE  WriteRequest: 900
+1 | 961
+1 | 1024
+1 | 1089
+1 | 1156
+1 | 1225
+1 | 1296
+1 | 1369
+1 | 1444
+1 | 1521
+1 | @0
+1 | 2016-04-26T23:03:32Z NONE  WriteRequest: 2500
+1 | 2601
+1 | 2704
+1 | 2809
+1 | 2916
+1 | 3025
+1 | 3136
+1 | 3249
+1 | 3364
+1 | 3481
+1 | @0
+1 | 2016-04-26T23:03:32Z NONE  WriteRequest: 400
+1 | 441
+1 | 484
+1 | 529
+1 | 576
+1 | 625
+1 | 676
+1 | 729
+1 | 784
+1 | 841
+1 | @0
+1 | 2016-04-26T23:03:32Z NONE  WriteRequest: 0
+1 | 1
+1 | 4
+1 | 9
+1 | 16
+1 | 25
+1 | 36
+1 | 49
+1 | 64
+1 | 81
+1 | @0
+1 | 2016-04-26T23:03:32Z NONE  WriteRequest: 100
+1 | 121
+1 | 144
+1 | 169
+1 | 196
+1 | 225
+1 | 256
+1 | 289
+1 | 324
+1 | 361
+1 | @0
+1 | starting
+1 | /pfs/data /pfs/out
+1 | walking file system
+1 | [('/pfs/data', [], ['numbers0', 'numbers6', 'numbers3', 'numbers8', 'numbers4', 'numbers1', 'numbers2', 'numbers5', 'numbers7', 'numbers9'])]
+1 | List of files to process: [['/pfs/data/numbers4', 'numbers4'], ['/pfs/data/numbers7', 'numbers7'], ['/pfs/data/numbers9', 'numbers9'], ['/pfs/data/numbers8', 'numbers8'], ['/pfs/data/numbers3', 'numbers3'], ['/pfs/data/numbers5', 'numbers5'], ['/pfs/data/numbers6', 'numbers6'], ['/pfs/data/numbers2', 'numbers2'], ['/pfs/data/numbers0', 'numbers0'], ['/pfs/data/numbers1', 'numbers1']]
+1 | Total 10 files
+1 | Opening /pfs/data/numbers4
+1 | Opening /pfs/data/numbers7
+1 | Opening /pfs/data/numbers9
+1 | Opening /pfs/data/numbers8
+1 | Opening /pfs/data/numbers3
+1 | 30
+1 | 
+1 | 31
+1 | 
+1 | 32
+1 | 
+1 | 33
+1 | 
+1 | 34
+1 | 
+1 | 35
+1 | 
+1 | 36
+1 | 
+1 | 37
+1 | 
+1 | 38
+1 | 
+1 | 39
+1 | 
+1 | Opening /pfs/data/numbers5
+1 | 50
+1 | 
+1 | 51
+1 | 
+1 | 52
+1 | 
+1 | 53
+1 | 
+1 | 54
+1 | 
+1 | 55
+1 | 
+1 | 56
+1 | 
+1 | 57
+1 | 
+1 | 58
+1 | 
+1 | 59
+1 | 
+1 | Opening /pfs/data/numbers6
+1 | Opening /pfs/data/numbers2
+1 | 20
+1 | 
+1 | 21
+1 | 
+1 | 22
+1 | 
+1 | 23
+1 | 
+1 | 24
+1 | 
+1 | 25
+1 | 
+1 | 26
+1 | 
+1 | 27
+1 | 
+1 | 28
+1 | 
+1 | 29
+1 | 
+1 | Opening /pfs/data/numbers0
+1 | 0
+1 | 
+1 | 1
+1 | 
+1 | 2
+1 | 
+1 | 3
+1 | 
+1 | 4
+1 | 
+1 | 5
+1 | 
+1 | 6
+1 | 
+1 | 7
+1 | 
+1 | 8
+1 | 
+1 | 9
+1 | 
+1 | Opening /pfs/data/numbers1
+1 | 10
+1 | 
+1 | 11
+1 | 
+1 | 12
+1 | 
+1 | 13
+1 | 
+1 | 14
+1 | 
+1 | 15
+1 | 
+1 | 16
+1 | 
+1 | 17
+1 | 
+1 | 18
+1 | 
+1 | 19
+1 | 
+1 | Finished
+2 | total 0
+2 | -rw-rw-rw- 1 root root  0 Apr 26 22:37 numbers0
+2 | -rw-rw-rw- 1 root root  0 Apr 26 22:37 numbers1
+2 | -rw-rw-rw- 1 root root  0 Apr 26 22:37 numbers2
+2 | -rw-rw-rw- 1 root root  0 Apr 26 22:37 numbers3
+2 | -rw-rw-rw- 1 root root 30 Apr 26 22:37 numbers4
+2 | -rw-rw-rw- 1 root root  0 Apr 26 22:37 numbers5
+2 | -rw-rw-rw- 1 root root  0 Apr 26 22:37 numbers6
+2 | -rw-rw-rw- 1 root root  0 Apr 26 22:37 numbers7
+2 | -rw-rw-rw- 1 root root 30 Apr 26 22:37 numbers8
+2 | -rw-rw-rw- 1 root root  0 Apr 26 22:37 numbers9
+2 | 2016-04-26T23:03:33Z NONE  WriteRequest: 1600
+2 | 1681
+2 | 1764
+2 | 1849
+2 | 1936
+2 | 2025
+2 | 2116
+2 | 2209
+2 | 2304
+2 | 2401
+2 | @0
+2 | 2016-04-26T23:03:33Z NONE  WriteRequest: 6400
+2 | 6561
+2 | 6724
+2 | 6889
+2 | 7056
+2 | 7225
+2 | 7396
+2 | 7569
+2 | 7744
+2 | 7921
+2 | @0
+2 | starting
+2 | /pfs/data /pfs/out
+2 | walking file system
+2 | [('/pfs/data', [], ['numbers0', 'numbers2', 'numbers6', 'numbers8', 'numbers3', 'numbers1', 'numbers9', 'numbers4', 'numbers7', 'numbers5'])]
+2 | List of files to process: [['/pfs/data/numbers1', 'numbers1'], ['/pfs/data/numbers9', 'numbers9'], ['/pfs/data/numbers4', 'numbers4'], ['/pfs/data/numbers8', 'numbers8'], ['/pfs/data/numbers0', 'numbers0'], ['/pfs/data/numbers2', 'numbers2'], ['/pfs/data/numbers7', 'numbers7'], ['/pfs/data/numbers3', 'numbers3'], ['/pfs/data/numbers6', 'numbers6'], ['/pfs/data/numbers5', 'numbers5']]
+2 | Total 10 files
+2 | Opening /pfs/data/numbers1
+2 | Opening /pfs/data/numbers9
+2 | Opening /pfs/data/numbers4
+2 | 40
+2 | 
+2 | 41
+2 | 
+2 | 42
+2 | 
+2 | 43
+2 | 
+2 | 44
+2 | 
+2 | 45
+2 | 
+2 | 46
+2 | 
+2 | 47
+2 | 
+2 | 48
+2 | 
+2 | 49
+2 | 
+2 | Opening /pfs/data/numbers8
+2 | 80
+2 | 
+2 | 81
+2 | 
+2 | 82
+2 | 
+2 | 83
+2 | 
+2 | 84
+2 | 
+2 | 85
+2 | 
+2 | 86
+2 | 
+2 | 87
+2 | 
+2 | 88
+2 | 
+2 | 89
+2 | 
+2 | Opening /pfs/data/numbers0
+2 | Opening /pfs/data/numbers2
+2 | Opening /pfs/data/numbers7
+2 | Opening /pfs/data/numbers3
+2 | Opening /pfs/data/numbers6
+2 | Opening /pfs/data/numbers5
+2 | Finished

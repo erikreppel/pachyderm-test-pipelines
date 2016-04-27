@@ -1,0 +1,32 @@
+0 | total 0
+0 | 2016-04-26T20:59:22Z NONE  WriteRequest: 0@0
+0 | starting
+0 | /pfs/square4 /pfs/out
+0 | [('/pfs/square4', [], [])]
+0 | Found 0 files
+0 | The final total was 0
+1 | total 0
+1 | 2016-04-26T20:59:24Z NONE  WriteRequest: 0@0
+1 | starting
+1 | /pfs/square4 /pfs/out
+1 | [('/pfs/square4', [], [])]
+1 | Found 0 files
+1 | The final total was 0
+2 | total 0
+2 | -rw-rw-rw- 1 root root 26 Apr 26 20:59 numbers0.txt
+2 | -rw-rw-rw- 1 root root 40 Apr 26 20:59 numbers1.txt
+2 | -rw-rw-rw- 1 root root 40 Apr 26 20:59 numbers2.txt
+2 | -rw-rw-rw- 1 root root 48 Apr 26 20:59 numbers3.txt
+2 | -rw-rw-rw- 1 root root 50 Apr 26 20:59 numbers4.txt
+2 | -rw-rw-rw- 1 root root 50 Apr 26 20:59 numbers5.txt
+2 | -rw-rw-rw- 1 root root 50 Apr 26 20:59 numbers6.txt
+2 | -rw-rw-rw- 1 root root 50 Apr 26 20:59 numbers7.txt
+2 | -rw-rw-rw- 1 root root 50 Apr 26 20:59 numbers8.txt
+2 | -rw-rw-rw- 1 root root 50 Apr 26 20:59 numbers9.txt
+2 | 2016-04-26T20:59:22Z NONE  WriteRequest: 55585@0
+2 | starting
+2 | /pfs/square4 /pfs/out
+2 | [('/pfs/square4', [], ['numbers4.txt', 'numbers8.txt', 'numbers9.txt', 'numbers1.txt', 'numbers2.txt', 'numbers3.txt', 'numbers0.txt', 'numbers7.txt', 'numbers6.txt', 'numbers5.txt'])]
+2 | Found 1 files
+2 | Opening /pfs/square4/numbers7.txt
+2 | The final total was 55585

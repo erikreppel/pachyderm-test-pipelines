@@ -1,0 +1,21 @@
+0 | ls: cannot access /pfs/square5: Operation not permitted
+0 | starting
+0 | /pfs/square5 /pfs/out
+0 | Invalid input path
+0 | sh: exit status 1
+0 | ls: cannot access /pfs/square5: Operation not permitted
+0 | 
+1 | ls: cannot access /pfs/square5: Operation not permitted
+1 | starting
+1 | /pfs/square5 /pfs/out
+1 | Invalid input path
+1 | sh: exit status 1
+1 | ls: cannot access /pfs/square5: Operation not permitted
+1 | 
+2 | ls: cannot access /pfs/square5: Operation not permitted
+2 | starting
+2 | /pfs/square5 /pfs/out
+2 | Invalid input path
+2 | sh: exit status 1
+2 | ls: cannot access /pfs/square5: Operation not permitted
+2 | 

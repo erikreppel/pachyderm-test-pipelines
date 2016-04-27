@@ -22,10 +22,13 @@ if not os.path.isdir(output_path) and output_path != '/pfs/out':
 
 print [f for f in os.walk(input_path)]
 
-files = [[os.path.join(f[0], f[2][0]), f[2][0]]
-            for f in os.walk(input_path) if f[2]]
+files = []
+for directory in os.walk(input_path):
+    for f in directory[2]:
+        files.append([os.path.join(directory[0], f), f])
 
 print 'Found %s files' % len(files)
+print files
 
 total = 0
 
@@ -37,7 +40,11 @@ for item in files:
 
     with open(file_read_path, 'r') as f:
         for line in f:
-            total += int(line)
+            try:
+                total += int(line)
+                print 'current sum:', total
+            except Exception as e:
+                print e
 
 print 'The final total was', total
 

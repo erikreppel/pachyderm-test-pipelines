@@ -1,20 +1,71 @@
 {
   "pipeline": {
-    "name": "test-pipeline1"
+    "name": "square"
   },
   "transform": {
     "image": "erikreppel/test-pipeline",
     "cmd": [ "sh" ],
     "stdin": [
-      "ls -1 /pfs/numbers",
-      "python square.py /pfs/numbers /pfs/out"
+      "sudo ls -l /pfs/data",
+      "python square.py /pfs/data /pfs/out"
     ]
   },
-  "shards": "1",
+  "parallelism": "3",
   "inputs": [
     {
       "repo": {
-        "name": "numbers"
+        "name": "data"
+      }
+    }
+  ]
+}
+{
+  "pipeline": {
+    "name": "sum"
+  },
+  "transform": {
+    "image": "erikreppel/test-pipeline-sum",
+    "cmd": [ "sh" ],
+    "stdin": [
+      "sudo ls -l /pfs/square",
+      "python sum.py /pfs/square /pfs/out"
+    ]
+  },
+  "parallelism": "1",
+  "inputs": [
+    {
+      "repo": {
+        "name": "square"
+      },
+      "reduce": true
+    }
+  ]
+}
+{
+  "pipeline": {
+    "name": "scale"
+  },
+  "transform": {
+    "image": "erikreppel/scale-pipe",
+    "cmd": [ "sh" ],
+    "stdin": [
+      "echo 'Sum:'",
+      "sudo ls -l /pfs/sum",
+      "echo 'square:'",
+      "sudo ls -l /pfs/square",
+      "python scale.py /pfs/square /pfs/sum /pfs/out"
+    ]
+  },
+  "parallelism": "1",
+  "inputs": [
+    {
+      "repo": {
+        "name": "square"
+      }
+    },
+    {
+      "repo": {
+        "name": "sum"
       }
     }
   ]
