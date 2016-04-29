@@ -56,7 +56,7 @@
       "python scale.py /pfs/square /pfs/sum /pfs/out"
     ]
   },
-  "parallelism": "3",
+  "parallelism": "1",
   "inputs": [
     {
       "repo": {
