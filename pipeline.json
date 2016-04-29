@@ -56,7 +56,7 @@
       "python scale.py /pfs/square /pfs/sum /pfs/out"
     ]
   },
-  "parallelism": "3",
+  "parallelism": "1",
   "inputs": [
     {
       "repo": {
@@ -66,6 +66,28 @@
     {
       "repo": {
         "name": "sum"
+      }
+    }
+  ]
+}
+{
+  "pipeline": {
+    "name": "add"
+  },
+  "transform": {
+    "image": "erikreppel/add-pipe",
+    "cmd": [ "sh" ],
+    "stdin": [
+      "echo 'Scale:'",
+      "sudo ls -l /pfs/scale",
+      "python add.py /pfs/scale /pfs/out"
+    ]
+  },
+  "parallelism": "3",
+  "inputs": [
+    {
+      "repo": {
+        "name": "scale"
       }
     }
   ]

@@ -30,9 +30,18 @@ func main() {
 	}
 	log.Println(repoInfo)
 
+	commits, err := pfs.ListCommit(apiClient, []string{repoName},
+		[]string{""}, false, true)
+
+	var parentCommitID string
+	if len(commits) > 0 {
+		parentCommitID = commits[0].Commit.ID
+		log.Println("There is a parent for this commit")
+
+	}
+
 	log.Println("Starting a commit")
 	branch := ""
-	var parentCommitID string
 	commit, err := pfs.StartCommit(apiClient, repoName, parentCommitID, branch)
 	if err != nil {
 		log.Fatal(err)
