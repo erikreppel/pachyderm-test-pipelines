@@ -4,14 +4,14 @@ import (
 	"bufio"
 	"fmt"
 	"github.com/pachyderm/pachyderm/src/client"
-	"github.com/pachyderm/pachyderm/src/client/pfs"
 	"log"
 	"os"
 	"path"
 )
 
 func main() {
-	apiClient, err := client.New()
+	pachAddr := os.Getenv("PACHD_PORT_650_TCP_ADDR")
+	c, err := client.NewFromAddress(pachAddr + ":650")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -20,11 +20,11 @@ func main() {
 
 	repoName := "data"
 	log.Println("Creating a new repo named", repoName)
+	c.CreateRepo(repoName)
 
-	pfs.CreateRepo(apiClient, repoName)
 	log.Println("Successfully created the repo", repoName)
 
-	repoInfo, err := pfs.InspectRepo(apiClient, repoName)
+	repoInfo, err := c.InspectRepo(repoName)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -33,13 +33,13 @@ func main() {
 	log.Println("Starting a commit")
 	branch := ""
 	var parentCommitID string
-	commit, err := pfs.StartCommit(apiClient, repoName, parentCommitID, branch)
+	commit, err := c.StartCommit(repoName, parentCommitID, branch)
 	if err != nil {
 		log.Fatal(err)
 	}
 
 	commitID := commit.ID
-	defer pfs.FinishCommit(apiClient, repoName, commitID)
+	defer c.FinishCommit(repoName, commitID)
 
 	for i := 0; i < 10; i++ {
 
