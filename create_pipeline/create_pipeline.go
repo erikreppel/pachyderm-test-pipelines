@@ -12,7 +12,8 @@ import (
 )
 
 func main() {
-	apiClient, err := client.New()
+	pachAddr := os.Getenv("PACHD_PORT_650_TCP_ADDR")
+	apiClient, err := client.NewFromAddress(pachAddr + ":650")
 	if err != nil {
 		log.Fatalln(err)
 	}
@@ -43,7 +44,7 @@ func main() {
 		if err := jsonpb.UnmarshalString(string(message), &request); err != nil {
 			log.Fatalf("Error reading from stdin: %s", err.Error())
 		}
-		if _, err := apiClient.CreatePipeline(
+		if err := apiClient.CreatePipeline(
 			context.Background(),
 			&request,
 		); err != nil {
