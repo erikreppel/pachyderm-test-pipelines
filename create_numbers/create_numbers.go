@@ -41,16 +41,13 @@ func main() {
 	commitID := commit.ID
 	defer c.FinishCommit(repoName, commitID)
 
-	for i := 0; i < 10; i++ {
+	for i := 0; i < 1; i++ {
 
 		fileName := fmt.Sprintf("numbers%d", i)
-		filePath := path.Join("/pfs", repoName, commitID, fileName)
-
-		file, err := os.Create(filePath)
+		file, err := c.PutFileWriter(repoName, commitID, fileName, "")
 		if err != nil {
 			log.Fatal(err)
 		}
-		defer file.Close()
 
 		w := bufio.NewWriter(file)
 		for j := i * 10; j < i*10+10; j++ {

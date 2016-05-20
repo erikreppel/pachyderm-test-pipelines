@@ -1,6 +1,6 @@
 {
   "pipeline": {
-    "name": "square"
+    "name": "square2"
   },
   "transform": {
     "image": "erikreppel/test-pipeline",
