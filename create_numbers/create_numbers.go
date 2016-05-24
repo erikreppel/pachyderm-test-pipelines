@@ -18,9 +18,10 @@ func main() {
 
 	log.Println("Established connection to Pachyderm")
 
-	repoName := "data"
+	repoName := "test_data"
 	log.Println("Creating a new repo named", repoName)
-	_ = c.CreateRepo(repoName)
+	err = c.CreateRepo(repoName)
+	log.Println(err)
 
 	log.Println("Successfully created the repo", repoName)
 
