@@ -6,7 +6,7 @@ import (
 	"github.com/pachyderm/pachyderm/src/client"
 	"log"
 	"os"
-	"path"
+	// "path"
 )
 
 func main() {
@@ -20,7 +20,7 @@ func main() {
 
 	repoName := "data"
 	log.Println("Creating a new repo named", repoName)
-	c.CreateRepo(repoName)
+	_ = c.CreateRepo(repoName)
 
 	log.Println("Successfully created the repo", repoName)
 
@@ -41,13 +41,14 @@ func main() {
 	commitID := commit.ID
 	defer c.FinishCommit(repoName, commitID)
 
-	for i := 0; i < 1; i++ {
+	for i := 0; i < 100; i++ {
 
 		fileName := fmt.Sprintf("numbers%d", i)
 		file, err := c.PutFileWriter(repoName, commitID, fileName, "")
 		if err != nil {
 			log.Fatal(err)
 		}
+		defer file.Close()
 
 		w := bufio.NewWriter(file)
 		for j := i * 10; j < i*10+10; j++ {
