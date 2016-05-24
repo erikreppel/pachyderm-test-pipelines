@@ -8,7 +8,6 @@
       "sh"
     ],
     "stdin": [
-      "sudo ls -l /pfs/data",
       "python square.py /pfs/data /pfs/out"
     ]
   },
@@ -30,7 +29,6 @@
       "sh"
     ],
     "stdin": [
-      "sudo ls -l /pfs/square",
       "python sum.py /pfs/square /pfs/out"
     ]
   },
@@ -53,11 +51,7 @@
       "sh"
     ],
     "stdin": [
-      "echo '!!!' $PACH_OUTPUT_COMMIT_ID",
-      "echo 'Sum:'",
-      "sudo ls -l /pfs/sum",
-      "echo 'square:'",
-      "sudo ls -l /pfs/square",
+      "echo $PACH_OUTPUT_COMMIT_ID",
       "python scale.py /pfs/square /pfs/sum /pfs/out"
     ]
   },
