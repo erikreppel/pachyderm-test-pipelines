@@ -42,6 +42,7 @@ scale_factor = 0
 
 with open(scale_files[0][0], 'r') as f:
     scale_factor = int(f.readline())
+    print scale_factor
 
 for f in input_files:
     print 'opening', f

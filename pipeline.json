@@ -8,7 +8,8 @@
       "sh"
     ],
     "stdin": [
-      "python square.py /pfs/data /pfs/out"
+      "ls /pfs",
+      "python square.py /pfs/test_data /pfs/out"
     ]
   },
   "parallelism": "3",
@@ -66,10 +67,7 @@
       "repo": {
         "name": "sum"
       },
-      "method": {
-        "partition": "file",
-        "incrementality": true
-      }
+      "method": "global"
     }
   ]
 }
