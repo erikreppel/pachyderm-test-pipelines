@@ -5,13 +5,10 @@ import (
 	"fmt"
 	"github.com/pachyderm/pachyderm/src/client"
 	"log"
-	"os"
-	// "path"
 )
 
 func main() {
-	pachAddr := os.Getenv("PACHD_PORT_650_TCP_ADDR")
-	c, err := client.NewFromAddress(pachAddr + ":650")
+	c, err := client.NewFromAddress("localhost:30650")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -44,7 +41,7 @@ func main() {
 
 	for i := 0; i < 100; i++ {
 
-		fileName := fmt.Sprintf("numbers%d", i)
+		fileName := fmt.Sprintf("test/this/numbers%d", i)
 		file, err := c.PutFileWriter(repoName, commitID, fileName, "")
 		if err != nil {
 			log.Fatal(err)

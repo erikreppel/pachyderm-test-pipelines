@@ -24,13 +24,8 @@ pachd-rsvsv            1/1          Running       2                             
 rethink-kqu9r          1/1          Running       0                              1h
     ```
 
-3. set enivronment variable
-    ```
-    $ export PACHD_PORT_650_TCP_ADDR=10.0.0.167
-    ```
+3. `$ go run create_numbers/create_numbers.go`
 
-4. `$ go run create_numbers/create_numbers.go`
+4. `$ pachctl create-pipeline -f pipeline.json`
 
-5. `$ pachctl create-pipeline -f pipeline.json`
-
-6. `$ pachctl list-job` to see the jobs created by the pipeline (might take a second for them all to show up)
+5. `$ pachctl list-job` to see the jobs created by the pipeline (might take a second for them all to show up)
